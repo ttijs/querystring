@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bestelpagina</h1>
+
+    <p>Hier zijn de gegevens opgevraagd uit de localStorage</p>
+
+    Bestelde product:
+    <div id="besteldeproductdiv">hier komt het bestelde product in beeld</div>
+    <br>
+    Prijs:
+    <div id="prijsdiv">hier komt de prijs in beeld</div>
+
+
+<script>
+        inlokaalopgeslagenproduct = localStorage.getItem('productwaarde');
+        document.getElementById("besteldeproductdiv").innerHTML = inlokaalopgeslagenproduct;
+
+        inlokaalopgeslagenprijs = localStorage.getItem('productprijs');
+        document.getElementById("prijsdiv").innerHTML = inlokaalopgeslagenprijs;
+
+
+</script>
+
+</body>
+</html>
